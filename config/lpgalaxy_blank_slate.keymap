@@ -81,22 +81,21 @@
  &kp LSHFT  &kp Z      &kp X      &kp C       &kp D          &kp V          &kp K            &kp H          &kp COMMA   &kp DOT    &kp SEMI      &kp RET
 #endif
 #ifdef TBLE_DUAL_2U
-&shifty &kp LCTRL  &kp LGUI   &kp LALT   &mo NAV_L         &shifty                        &kp SPACE                &mo NUM_L   &kp LALT   &kp RGUI      &kp RSHIFT
+ &kp LCTRL  &kp LGUI   &kp LALT   &mo NAV_L         &shifty                        &kp SPACE                &mo NUM_L   &kp LALT   &kp RGUI      &kp RSHIFT
 #elif defined(TBLE_MIT)
-&mo SYM_L   &kp LCTRL  &kp LGUI   &kp LALT    &mo NAV_L           &kp SPACE                  &mo NUM_L      &kp UP      &kp LEFT   &kp DOWN      &kp RIGHT
+ &mo SYM_L  &kp LCTRL  &kp LGUI   &kp LALT    &mo NAV_L           &kp SPACE              &mo NUM_L      &kp UP      &kp LEFT   &kp DOWN      &kp RIGHT
 #else
-&kp LCTRL  &mo SYM_L   &kp LGUI  &kp LALT    &mo NAV_L      &kp SPACE      &kp RET          &mo NUM_L      &kp LEFT    &kp UP     &kp DOWN      &kp RIGHT
+ &kp LCTRL  &mo SYM_L   &kp LGUI  &kp LALT    &mo NAV_L      &kp SPACE      &kp RET          &mo NUM_L      &kp LEFT    &kp UP     &kp DOWN      &kp RIGHT
 #endif
             >;
         };
 
-
         nav_layer {
             label = "Nav";
             bindings = <
-&kb TILDE  &kb N1     &kb N2     &kb N3      &kb N4          &kb N5       &kb N6     &kb N7         &kb N8      &kb N9     &kb N0     &kp DEL
-&trans     &kb F1     &kb F2     &kb F3      &kb F4          &kb F5       &kb F6     &kb F7         &kb F8      &kb F9     &kb F10    &trans
-&trans     &trans     &trans     &trans      &trans          &kb F11      &kb F12    &trans         &trans      &trans     &trans     &trans
+&kp TILDE  &kp N1     &kp N2     &kp N3      &kp N4       &kp N5       &kp N6     &kp N7         &kp N8      &kp N9     &kp N0     &kp DEL
+&trans     &kp F1     &kp F2     &kp F3      &kp F4       &kp F5       &kp F6     &kp F7         &kp F8      &kp F9     &kp F10    &trans
+&trans     &trans     &trans     &trans      &trans       &kp F11      &kp F12    &trans         &trans      &trans     &trans     &trans
 #ifdef TBLE_DUAL_2U
 &trans  &trans        &trans     &trans              &trans                    &trans       &trans         &trans &trans &trans
 #elif defined(TBLE_MIT)
@@ -126,9 +125,9 @@
         sym_layer {
             label = "Sym";
             bindings = <
-&trans     &trans     &trans     &trans      &trans       &trans       &trans     &trans    &trans       &trans       &kb KP_PLUS    &kb KP_EQUAL
-&trans     &kp LBRC   &kp RBRC   &kp STAR    &kp LPAR     &kp RBRC     &trans     &trans    &trans       &trans       &kb APOS       &kb DQT
-&trans     &kp LPAR   &kp RPAR   &trans      &trans       &trans       &trans     &trans    &trans       &trans       &kb FSLH       &kb BSLH
+&trans     &trans     &trans     &trans      &trans       &trans       &trans     &trans    &trans       &trans       &kp KP_PLUS    &kp KP_EQUAL
+&trans     &kp LBRC   &kp RBRC   &kp STAR    &kp LPAR     &kp RBRC     &trans     &trans    &trans       &trans       &kp APOS       &kp DQT
+&trans     &kp LPAR   &kp RPAR   &trans      &trans       &trans       &trans     &trans    &trans       &trans       &kp FSLH       &kp BSLH
 #ifdef TBLE_DUAL_2U
 &trans &trans        &trans     &kp RPAR                &trans                    &trans       &trans         &trans &trans &trans
 #elif defined(TBLE_MIT)
