@@ -37,10 +37,10 @@
     };
 
     macros {
-          PWD_1(thumbs_up,
+      ZMK_MACRO(thumbs_up,
 		wait-ms = <1>;
 		tap-ms = <5>;
-                bindings = <&kp 3 &kp 4 &kp 4 &kp 5 &kp D &kp a &kp r &kp k &kp COLON &kp PLUS &kp N1 &kp COLON &kp RET>;
+                bindings = <&kp PLUS &kp COLON &kp PLUS &kp N1 &kp COLON &kp RET>;
 		)
     };
     
@@ -116,7 +116,7 @@
 #ifdef TBLE_DUAL_2U
 &trans  &trans       &trans     &kp N0              &trans                 &trans            &trans         &trans &trans &trans
 #elif defined(TBLE_MIT)
-&PWD_1  &trans       &trans     &kp INS     &kp DEL        &none            &trans        &kp HOME     &kp END  &kp PG_UP  &kp PG_DN
+&trans  &trans       &trans     &kp INS     &kp DEL        &none            &trans        &kp HOME     &kp END  &kp PG_UP  &kp PG_DN
 #else
 &trans  &trans       &trans     &kp N0      &trans    &none         &none     &kp ESC        &kp DEL      &trans &trans &trans
 #endif
