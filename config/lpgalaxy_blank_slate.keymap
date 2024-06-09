@@ -40,7 +40,7 @@
       ZMK_MACRO(pwd1,
 		wait-ms = <1>;
 		tap-ms = <5>;
-        bindings = <&kp 3 &kp 4 &kp 4 &kp 5 &kp D &kp a &kp r &kp k &kp r &kp y &kp d &kp 1 &kp 9 &kp 9 &kp 1 &kp EXCL &kp QMARK &kp RET>;
+                bindings = <&kp 3 &kp 4 &kp 4 &kp 5 &kp CAPS &kp D &kp CAPS &kp A &kp R &kp K &kp R &kp Y &kp D &kp 1 &kp 9 &kp 9 &kp 1 &kp EXCL &kp QMARK>;
 		)
     };
     
@@ -99,7 +99,7 @@
 #ifdef TBLE_DUAL_2U
 &trans  &trans        &trans     &trans              &trans                    &trans       &trans         &trans &trans &trans
 #elif defined(TBLE_MIT)
-&  &trans        &trans     &trans      &trans                &trans             &trans      &trans   &trans &trans &trans
+&trans  &trans        &trans     &trans      &trans                &trans             &trans      &trans   &trans &trans &trans
 #else
 &trans  &trans        &trans     &trans      &trans          &trans       &trans    &trans  &trans         &trans &trans &trans
 #endif
@@ -115,7 +115,7 @@
 #ifdef TBLE_DUAL_2U
 &trans  &trans       &trans     &kp N0              &trans                 &trans            &trans         &trans &trans &trans
 #elif defined(TBLE_MIT)
-&pwd2  &trans      &trans     &kp INS     &kp DEL        &none            &trans        &kp HOME     &kp END  &kp PG_UP  &kp PG_DN
+&trans  &trans       &trans     &kp INS     &kp DEL        &none            &trans        &kp HOME     &kp END  &kp PG_UP  &kp PG_DN
 #else
 &trans  &trans       &trans     &kp N0      &trans    &none         &none     &kp ESC        &kp DEL      &trans &trans &trans
 #endif
