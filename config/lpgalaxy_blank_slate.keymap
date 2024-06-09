@@ -40,13 +40,13 @@
       ZMK_MACRO(pwd1,
 		wait-ms = <20>;
 		tap-ms = <30>;
-                bindings = <&kp N3 &kp N4 &kp N4 &kp N5 &kp CAPS &kp D &kp CAPS &kp A &kp R &kp K &kp R &kp Y &kp D &kp N1 &kp N9 &kp N9 &kp N1 &kp EXCL &kp QMARK &kp RET>;
+                bindings = <&kp N3 &kp N4 &kp N4 &kp N5 &kp LS(D) &kp A &kp R &kp K &kp R &kp Y &kp D &kp N1 &kp N9 &kp N9 &kp N1 &kp EXCL &kp QMARK &kp RET>;
 		)
 
         ZMK_MACRO(pwd2,
         wait-ms = <20>;
         tap-ms = <30>;
-                bindings = <&kp CAPS &kp C &kp CAPS &kp A &kp Z &kp S &kp N &kp A &kp V &kp E &kp N0 &kp QMARK &kp RET>;
+                bindings = <&kp LS(C) &kp A &kp Z &kp S &kp N &kp A &kp V &kp E &kp N0 &kp QMARK &kp RET>;
                 )
         
     };
